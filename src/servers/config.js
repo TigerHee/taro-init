@@ -2,7 +2,7 @@ const getBaseUrl = (url) => {
   let BASE_URL = '';
   if (process.env.NODE_ENV === "development") {
     //开发环境
-    if(url.incluse('/api/')){
+    if(url.includes('/api/')){
       BASE_URL = ''
     }else{
       
