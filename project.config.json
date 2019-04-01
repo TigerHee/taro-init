@@ -2,7 +2,7 @@
 	"miniprogramRoot": "dist/",
 	"projectname": "tigerHee",
 	"description": "小程序研究学习",
-	"appid": "wx54dd80b74666f097",
+	"appid": "appid",
 	"setting": {
 		"urlCheck": true,
 		"es6": false,
