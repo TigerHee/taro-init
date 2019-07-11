@@ -74,3 +74,7 @@ taro build --type rn --watch
     │   └── index.html
     ├──  README.md
     └──  package.json
+    
+## 线上作品：
+
+![线上作品](https://raw.githubusercontent.com/TigerHee/taro-init/master/src/assets/img/xcx.jpg)
