@@ -3,6 +3,7 @@ import { View, Text } from '@tarojs/components'
 import { connect } from '@tarojs/redux'
 import { update_state } from '@src/redux/actions'
 import { AtButton } from 'taro-ui'
+import { getIpInfo } from '@src/servers/servers'
 
 import './index.scss'
 
@@ -25,7 +26,11 @@ class Index extends Component {
     console.log(this.props, nextProps)
   }
 
-  componentWillUnmount() { }
+  componentWillUnmount() {
+    getIpInfo().then(res=>{
+      console.log(res)
+    }).catch(err=>console.log(err))
+  }
 
   componentDidShow() { }
 
