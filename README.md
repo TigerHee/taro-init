@@ -1,4 +1,4 @@
-# 前言
+## 前言
 
 [Taro](https://taro.aotu.io/) 是一套遵循 [React](https://reactjs.org/) 语法规范的 **多端开发** 解决方案。现如今市面上端的形态多种多样，Web、React-Native、微信小程序等各种端大行其道，当业务要求同时在不同的端都要求有所表现的时候，针对不同的端去编写多套代码的成本显然非常高，这时候只编写一套代码就能够适配到多端的能力就显得极为需要。
 
@@ -6,7 +6,7 @@
 
 该项目基于[Taro](https://taro.aotu.io/)，构建了一个demo。
 
-# 项目运行
+## 项目运行
 
 ```
 
@@ -46,8 +46,21 @@ taro build --type rn --watch
 (去掉 --watch 将不会监听文件修改，并会对代码进行压缩打包)
 
 ```
+## 项目版本升级
 
-# 目录结构
+```
+1. 更新 Taro CLI 工具:
+  npm i -g @tarojs/cli@latest
+
+2. 更新项目中 Taro 相关的依赖:
+  taro update project
+
+3. 删除原来的node_modules后重新安装依赖(注意)
+  cnpm install
+
+```
+
+## 目录结构
 
 
     ├── config                     // Taro配置目录
