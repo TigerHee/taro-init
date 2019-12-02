@@ -8,54 +8,57 @@
 
 ## 项目运行
 
-```
+```JS
 
 git clone git@github.com:TigerHee/taro-init.git
 
 cd taro-init
 
-# 全局安装taro脚手架
+// 全局安装taro脚手架
 npm install -g @tarojs/cli
 或
 yarn global add @tarojs/cli
 
-# 安装项目依赖
+// 安装项目依赖
 npm install
 或
 yarn
 
 
-# 微信小程序
+// 微信小程序
 taro build --type weapp --watch
 
-# 支付宝小程序
+// 支付宝小程序
 taro build --type alipay --watch
 
-# 百度小程序
+// 百度小程序
 taro build --type swan --watch
 
-# 字节跳动小程序
+// 字节跳动小程序
 taro build --type tt --watch
 
-# H5
+// H5
 taro build --type h5 --watch
 
-# React Native
+// React Native
 taro build --type rn --watch
 
-(去掉 --watch 将不会监听文件修改，并会对代码进行压缩打包)
+// (去掉 --watch 将不会监听文件修改，并会对代码进行压缩打包)
 
 ```
 ## 项目版本升级
 
-```
-1. 更新 Taro CLI 工具:
+```js
+// 1. 更新 Taro CLI 工具:
+
   npm i -g @tarojs/cli@latest
 
-2. 更新项目中 Taro 相关的依赖:
+// 2. 更新项目中 Taro 相关的依赖:
+
   taro update project
 
-3. 删除原来的node_modules后重新安装依赖(注意)
+// 3. 删除原来的node_modules后重新安装依赖(注意):
+
   cnpm install
 
 ```
